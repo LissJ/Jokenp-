@@ -1,0 +1,158 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+/* FIM RESET CSS */
+
+/* FONTES */
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url(font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
+/* FIM FONTES */
+
+img { 
+    width: auto;
+    border: #000000 2.4px solid;
+    height: 110px;
+    background-color: #f72020;
+    border-radius: 30px;
+    box-shadow: 0px 3px 3px #700909b3;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.4;
+    transition: ease-in-out 0.2s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado{
+    opacity: 1;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins Bold';
+    background-color: #7e0808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#versus {
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+#principal {
+    height: 640px;
+    background-color: #ffd9d9;
+    border-radius: 10px;
+    padding: 80px;
+    box-shadow: 0px 0px 10px #70090933;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#placar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #6a0707;
+    padding: 70px 0;
+    margin: 20px 0;
+}
+
+#jogador, #computador {
+    text-align: center;
+}
+
+#jogadorEscolha, #computadorEscolha {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+p#computadorPontos {
+    font-size: 25px;
+}
+
+p#jogadorPontos {
+    font-size: 25px;
+}
+
+#jogadorEscolha li, #computadorEscolha li {
+    margin: 0 30px;
+}
+
+#jogadorEscolha a, #computadorEscolha a {
+    display: block;
+    width: 115px;
+    height: 115px;
+    overflow: hidden;
+}
+
+#jogadorEscolha a:hover, #computadorEscolha a:hover {
+    border-color: #6f0101;
+}
+
+#mensagem {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+    #placar {
+        flex-direction: column;
+    }
+
+    #jogador, #computador {
+        margin-bottom: 20px;
+    }
+}
